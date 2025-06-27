@@ -1,0 +1,14 @@
+[mesh]
+interface = "wlan1"
+ssid = "fig-mesh"
+frequency = 5180
+channel_width = "HT20"
+ip_address = "10.10.10.99"
+netmask = 24
+
+[ap]
+interface = "wlan0"
+ip_address = "192.168.4.1"
+netmask = 24
+hostapd_conf = "/etc/hostapd/hostapd.conf"
+dnsmasq_conf = "/etc/dnsmasq.conf"

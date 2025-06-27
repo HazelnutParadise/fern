@@ -1,0 +1,12 @@
+[Unit]
+Description=FIG Daemon - Flexible Interconnected Grid
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/figd
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
